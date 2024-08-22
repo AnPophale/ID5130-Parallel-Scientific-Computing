@@ -73,7 +73,7 @@ Some of the results for the Jacobi and Gauss Seidel methods with Multigrid are s
 </p>
 
 
-**Conclusions:**
+**Conclusions:**  
 Some of the key conclusions from this study are as follows:
 * The Multigrid method requires a significantly lower number of iterations compares to Jacobi or Gauss Seidel methods as expected
 * The Multigrid method with the Red Black smoother was found to be the fastest among all the methods.
