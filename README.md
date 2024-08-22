@@ -19,7 +19,8 @@ Jacobi Method:
 * [JacobiMG_MPI.c](Codes/JacobiMG_MPI.c) - Parallel Jacobi Method with Multigrid using MPI
 
 Red Black Gauss Seidel Method:  
-* [RedBlack_Serial.c](Codes/RedBlack_Serial.c) - Serial Red Black Method
+The Red Black Gauss Seidel Method is a modification of the standard Gauss Seidel algorithm allowing it to run in parallel which is not possible otherwise due to the data depedency inherent to the method. More details about this method can be found [here](https://ocw.mit.edu/courses/16-920j-numerical-methods-for-partial-differential-equations-sma-5212-spring-2003/2351cb5ce7f15d89fa4cb3fa17eb6f64_lec6_notes.pdf)  
+* [RedBlack_Serial.c](Codes/RedBlack_Serial.c) - Serial Red Black Gauss Seidel Method
 * [RedBlack_OMP.c](Codes/RedBlack_OMP.c) - Parallel Red Black Method using OpenMP
 * [RedBlack_MPI.c](Codes/RedBlack_MPI.c) - Parallel Red Black Method using MPI
 * [RedBlackMG_Serial.c](Codes/RedBlackMG_Serial.c) - Serial Red Black Method with Multigrid
