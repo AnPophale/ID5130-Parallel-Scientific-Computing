@@ -7,7 +7,26 @@ A detailed explanation for work can be found in the [project report](https://git
 
 **Motivation:**  
 
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/baae457e-326a-4da0-81b2-cb54e8bb9401" alt="Fig 1: The Multigrid Algorithm" style="width: 50%;">
+</p>
+<p align="center">
+  <em>Figure 1: The Multigrid Algorithm</em>
+</p>
+
 **Multigrid Method:**  
+
+In this study, we use 2 level V cycle multigrid for simplicity as the main aim is the parallelize the code and compare its performance with other methods.
+
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c85762aa-2678-4a7a-8877-985d9b91a2ff" alt="Fig 2: Types of Multigrid cycles" style="width: 50%;">
+</p>
+<p align="center">
+  <em>Figure 2: Types of Multigrid cycles</em>
+</p>
 
 
 **Codes:**  
