@@ -9,7 +9,10 @@ A detailed explanation for work can be found in the [project report](https://git
 
 **Multigrid Method:**  
 
+
 **Codes:**  
+We consider an example of a 2D Poisson equation discretized using the Finite Difference method which leads to a system of linear equations to be solved. To solve these equations we implement the Jacobi and Gauss Seidel methods with and without applying the Multigrid principle as well as serial and parallel versions of each. An analytical solution exists for the chosen Poisson equation which is used to determine the convergence criteria.
+
 Jacobi Method:
 * [Jacobi_Serial.c](Codes/Jacobi_Serial.c) - Serial Jacobi Method
 * [Jacobi_OMP.c](Codes/Jacobi_OMP.c) - Parallel Jacobi Method using OpenMP
