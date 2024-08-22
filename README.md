@@ -3,11 +3,11 @@
 
 This project was part of the course ID5130 Parallel Scientific Computing taken during the Jan-May 2024 semester. The main objective of this work is to parallelize the multigrid method using OpenMP for shared memory systems and MPI for distributed memory systems. Further, the performance of standard iterative solvers such as the Jacobi and Gauss Seidel Methods is compared with the Multigrid method along with parallel implementations of both.
 
-A detailed explanation for work can be found in the [project report](https://github.com/AnPophale/ID5130-Parallel-Scientific-Computing/blob/f3e6d66c87d151d2d5ce7e71c112c3df2c1f00d9/ID5130%20Project%20Report.pdf) and the C codes to implement all the methods are given in the [Codes](Codes) folder. All the data collected for different methods, such as the number of iterations, run time and speedup are tabulated in the [supplementary information](https://github.com/AnPophale/ID5130-Parallel-Scientific-Computing/blob/f3e6d66c87d151d2d5ce7e71c112c3df2c1f00d9/Supplementary%20Data.xlsx) 
+A detailed explanation for work can be found in the [project report](https://github.com/AnPophale/ID5130-Parallel-Scientific-Computing/blob/f3e6d66c87d151d2d5ce7e71c112c3df2c1f00d9/ID5130%20Project%20Report.pdf) and the C codes to implement all the methods are given in the [Codes](Codes) folder. The data collected for different methods, such as the number of iterations, runtime and speedup are tabulated in the [supplementary information](https://github.com/AnPophale/ID5130-Parallel-Scientific-Computing/blob/f3e6d66c87d151d2d5ce7e71c112c3df2c1f00d9/Supplementary%20Data.xlsx) 
 
-**Motivation**  
+**Motivation:**  
 
-**Multigrid Method**  
+**Multigrid Method:**  
 
 **Codes:**  
 Jacobi Method:
@@ -44,10 +44,6 @@ Some of the results for the Jacobi and Gauss Seidel methods with Multigrid are s
 <p align="center">
   <em>Figure 4: Speed up vs Number of processors for parallel multigrid methods using a problem size of 513</em>
 </p>
-
-
-
-
 
 **References:**  
 [1] Mazumder, S. (2015). Numerical methods for partial differential equations: Finite Difference and Finite Volume Methods. Academic Press.
