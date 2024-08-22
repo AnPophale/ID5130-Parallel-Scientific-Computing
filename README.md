@@ -3,7 +3,7 @@
 
 This project was part of the course ID5130 Parallel Scientific Computing taken during the Jan-May 2024 semester. The main objective of this work is to parallelize the multigrid method using OpenMP for shared memory systems and MPI for distributed memory systems. Further, the performance of standard iterative solvers such as the Jacobi and Gauss Seidel methods is compared with the Multigrid method, along with parallel implementations of both.
 
-A detailed explanation of the work can be found in the [project report](https://github.com/AnPophale/ID5130-Parallel-Scientific-Computing/blob/f3e6d66c87d151d2d5ce7e71c112c3df2c1f00d9/ID5130%20Project%20Report.pdf) and the C codes to implement all the methods are given in the [codes](Codes) folder. The data collected for different methods, such as the number of iterations, runtime and speedup is tabulated in the [supplementary information](https://github.com/AnPophale/ID5130-Parallel-Scientific-Computing/blob/f3e6d66c87d151d2d5ce7e71c112c3df2c1f00d9/Supplementary%20Data.xlsx) 
+A detailed explanation of the work can be found in the [project report](https://github.com/AnPophale/ID5130-Parallel-Scientific-Computing/blob/f3e6d66c87d151d2d5ce7e71c112c3df2c1f00d9/ID5130%20Project%20Report.pdf) and the C codes to implement all the methods are given in the [codes](Codes) folder. The data collected for different methods, such as the number of iterations, runtime and speedup is tabulated in the [supplementary information](https://github.com/AnPophale/ID5130-Parallel-Scientific-Computing/blob/f3e6d66c87d151d2d5ce7e71c112c3df2c1f00d9/Supplementary%20Data.xlsx).
 
 **Motivation:**  
 Tackling engineering problems with a computational approach often involves solving partial differential equations. These equations when solved numerically using methods such as the finite volume or finite difference methods generate a system of linear equations that need to be solved. The solution to these equations are generally obtained using iterative methods such as the Jacobi and Gauss Seidel methods. It has been shown that as the error decreases, the rate of convergence of these methods decreases making them slow.  
@@ -45,7 +45,7 @@ _Jacobi Method_
 * [JacobiMG_MPI.c](Codes/JacobiMG_MPI.c) - Parallel Jacobi Method with Multigrid using MPI
 
 _Red Black Gauss Seidel Method:_  
-The Red Black Gauss Seidel Method is a modification of the standard Gauss Seidel algorithm allowing it to run in parallel which is not possible otherwise due to the data depedency inherent to the method. More details about this method can be found [here](https://ocw.mit.edu/courses/16-920j-numerical-methods-for-partial-differential-equations-sma-5212-spring-2003/2351cb5ce7f15d89fa4cb3fa17eb6f64_lec6_notes.pdf)  
+The Red Black Gauss Seidel Method is a modification of the standard Gauss Seidel algorithm allowing it to run in parallel which is not possible otherwise due to the data depedency inherent to the method. More details about this method can be found [here](https://ocw.mit.edu/courses/16-920j-numerical-methods-for-partial-differential-equations-sma-5212-spring-2003/2351cb5ce7f15d89fa4cb3fa17eb6f64_lec6_notes.pdf).  
 * [RedBlack_Serial.c](Codes/RedBlack_Serial.c) - Serial Red Black Gauss Seidel Method
 * [RedBlack_OMP.c](Codes/RedBlack_OMP.c) - Parallel Red Black Method using OpenMP
 * [RedBlack_MPI.c](Codes/RedBlack_MPI.c) - Parallel Red Black Method using MPI
