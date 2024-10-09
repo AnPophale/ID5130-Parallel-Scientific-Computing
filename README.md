@@ -18,7 +18,7 @@ The Multigrid method is a principle which can be applied to such iterative metho
 </p>
 
 **Multigrid Method:**    
-Decomposing the error field over the discretized domain for iterative solvers using a Fourier series reveals some interesting and useful properties of the error. It is observed that high frequency error components are eliminated quickly but the low frequecny componenets slow down the convergence, requiring a larger number of equations to smoothen out. The multigrid method makes use of this property of the error field. 
+Decomposing the error field over the discretized domain for iterative solvers using a Fourier series reveals some interesting and useful properties of the error. It is observed that high frequency error components are eliminated quickly but the low frequency components slow down the convergence, requiring a larger number of equations to smoothen out. The multigrid method makes use of this property of the error field. 
 
 The key idea in the multigrid method is that low frequency error components on a fine mesh, have a high frequency on a coarse mesh which can be eliminated quickly. Hence, in multigrid method, the errors are transferred from a fine mesh to a coarser mesh where they can be smoothed out faster. This methodology can be applied to any of the iterative solvers which are known as smoothers in this context and we use the Jacobi and Gauss Seidel methods as smoothers in this study. This algorithm for the Multigrid method is depicted in Fig. 1 which shows an example of the V cycle multigrid with 3 mesh levels.  
 
@@ -45,7 +45,7 @@ _Jacobi Method_
 * [JacobiMG_MPI.c](Codes/JacobiMG_MPI.c) - Parallel Jacobi Method with Multigrid using MPI
 
 _Red Black Gauss Seidel Method:_  
-The Red Black Gauss Seidel Method is a modification of the standard Gauss Seidel algorithm allowing it to run in parallel which is not possible otherwise due to the data depedency inherent to the method. More details about this method can be found [here](https://ocw.mit.edu/courses/16-920j-numerical-methods-for-partial-differential-equations-sma-5212-spring-2003/2351cb5ce7f15d89fa4cb3fa17eb6f64_lec6_notes.pdf).  
+The Red Black Gauss Seidel Method is a modification of the standard Gauss Seidel algorithm allowing it to run in parallel which is not possible otherwise due to the data dependency inherent to the method. More details about this method can be found [here](https://ocw.mit.edu/courses/16-920j-numerical-methods-for-partial-differential-equations-sma-5212-spring-2003/2351cb5ce7f15d89fa4cb3fa17eb6f64_lec6_notes.pdf).  
 * [RedBlack_Serial.c](Codes/RedBlack_Serial.c) - Serial Red Black Gauss Seidel Method
 * [RedBlack_OMP.c](Codes/RedBlack_OMP.c) - Parallel Red Black Method using OpenMP
 * [RedBlack_MPI.c](Codes/RedBlack_MPI.c) - Parallel Red Black Method using MPI
@@ -62,7 +62,7 @@ Some of the results for the Jacobi and Gauss Seidel methods with Multigrid are s
   <img src="https://github.com/user-attachments/assets/000fd2fa-0ac3-4a78-a99a-c254e56ede4a" alt="Fig 3: Speed up vs Problem Size for parallel multigrid methods using 4 processors" style="width: 50%;">
 </p>
 <p align="center">
-  <em>Figure 3: Speed up vs Problem Size for Parallel Multigrid Methods using 4 processors</em>
+  <em>Figure 3: Speedup vs Problem Size for Parallel Multigrid Methods using 4 processors</em>
 </p>
 
 <p align="center">
@@ -75,9 +75,9 @@ Some of the results for the Jacobi and Gauss Seidel methods with Multigrid are s
 
 **Conclusions:**  
 Some of the key conclusions from this study are as follows:
-* The Multigrid method requires a significantly lower number of iterations compared to Jacobi or Gauss Seidel methods as expected
+* The Multigrid method requires a significantly lower number of iterations compared to Jacobi or Gauss Seidel methods as expected.
 * The Multigrid method with the Red Black smoother was found to be the fastest among all the methods.
-* Along with this the OpenMP parallelization of this method provides the best performance when compared to MPI. For OpenMP, 16 threads give the best performance while for MPI, 8 processors provide the best speedup
+* Along with this the OpenMP parallelization of this method provides the best performance when compared to MPI. For OpenMP, 16 threads give the best performance, while for MPI 8 processors provide the best speedup.
 * This work can be further extended using various levels and cycles for the multigrid method as well as using GPU acceleration to parallelize the multigrid algorithm. 
 
 
